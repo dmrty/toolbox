@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Customize · GitBook</title>
+  <title>Customize · Toolbox - Complete Frontend Atomic Workflow</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="">
   <meta name="generator" content="GitBook 3.2.2">
-  
+  <meta name="author" content="Antistatique">
   
   
     
@@ -17,11 +17,11 @@
     
     
       
-      <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+      <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
       
     
       
-      <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+      <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-onedark.css">
       
     
       
@@ -435,48 +435,48 @@
 <h2 id="theme-settings">Theme settings</h2>
 <p>In your local <code>toolbox.json</code>, you can add a <code>theme</code> configuration object with <strong>multiples optional parameters</strong> who looks like :</p>
 <p>./toolbox.json</p>
-<pre><code class="lang-json">{
-  ...,
-  <span class="hljs-string">&quot;theme&quot;</span>: {
-    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Batman &lt;span&gt;Design System&lt;/span&gt;&quot;</span>,
-    <span class="hljs-string">&quot;primary&quot;</span>: <span class="hljs-string">&quot;#FFAC2F&quot;</span>,
-    <span class="hljs-string">&quot;secondary&quot;</span>: <span class="hljs-string">&quot;#AD6D2F&quot;</span>,
-    <span class="hljs-string">&quot;bodyBackground&quot;</span>: <span class="hljs-string">&quot;#ECECEC&quot;</span>,
-    <span class="hljs-string">&quot;bodyForeground&quot;</span>: <span class="hljs-string">&quot;#222222&quot;</span>,
-    <span class="hljs-string">&quot;headingForeground&quot;</span>: <span class="hljs-string">&quot;#000&quot;</span>,
-    <span class="hljs-string">&quot;itemBackground&quot;</span>: <span class="hljs-string">&quot;#FFF&quot;</span>,
-    <span class="hljs-string">&quot;itemBorder&quot;</span>: <span class="hljs-string">&quot;#FFAC2F&quot;</span>,
-    <span class="hljs-string">&quot;toolbarIconsForeground&quot;</span>: <span class="hljs-string">&quot;#000&quot;</span>,
-    <span class="hljs-string">&quot;sidebarBackground&quot;</span>: <span class="hljs-string">&quot;#222222&quot;</span>,
-    <span class="hljs-string">&quot;sidebarForeground&quot;</span>: <span class="hljs-string">&quot;#D8D8D8&quot;</span>,
-    <span class="hljs-string">&quot;brand&quot;</span>: <span class="hljs-string">&quot;&lt;symbol id=\&quot;icon-toolbox\&quot; viewBox=\&quot;0 0 88 47\&quot; version=\&quot;1.1\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot;&gt;&lt;path fill=\&quot;currentColor\&quot; d=\&quot;M32.954238,39.4102 C37.860438,39.63676 42.040138,42.6993 43.876238,47 C45.712138,42.7031 49.891838,39.6367 54.798238,39.4102 C56.587338,35.1875 60.755238,32.3946 65.376238,32.3946 C66.770738,32.3946 68.130138,32.6446 69.430938,33.14069 C71.473938,29.62119 75.278638,27.39459 79.376238,27.39459 C82.579338,27.39459 85.602838,28.75399 87.743438,31.02739 C86.848908,19.32439 81.380138,8.55039 72.395438,0.89839 C67.739238,8.05069 60.418438,13.29339 52.137438,15.36339 C52.110098,15.3712 52.078848,15.37902 52.055408,15.38292 C51.758528,15.44152 51.446028,15.36339 51.211658,15.16808 C50.981188,14.97277 50.848378,14.6798 50.856188,14.37511 L50.863998,14.17589 C50.867908,14.10167 50.871808,14.02745 50.871808,13.95323 C50.871808,13.92979 50.871808,13.85558 50.875718,13.83604 C50.852278,11.71884 50.395248,9.71104 49.578818,8.03524 L48.688198,8.98836 C48.387418,9.30867 47.918668,9.39852 47.524098,9.20711 C45.309298,8.13681 42.442098,8.13681 40.227198,9.20711 C39.832668,9.39852 39.360008,9.30867 39.063098,8.98836 L38.172478,8.03524 C37.356068,9.70714 36.902978,11.71104 36.883378,13.80864 C36.883378,13.83208 36.879468,13.90239 36.875568,13.92583 C36.875568,14.02739 36.879468,14.10161 36.883378,14.17192 L36.891188,14.37114 C36.899008,14.68364 36.762278,14.98052 36.516188,15.17583 C36.273998,15.37114 35.953688,15.44145 35.648998,15.36724 C27.352098,13.30474 20.015998,8.05864 15.351998,0.89024 C6.359798,8.56214 0.887,19.34724 0,31.03124 C2.1445,28.75394 5.167998,27.39454 8.371098,27.39454 C12.468798,27.39454 16.273398,29.62114 18.316398,33.14064 C19.617198,32.64455 20.976598,32.39455 22.371098,32.39455 C26.996098,32.39455 31.160198,35.18755 32.953098,39.41015 L32.954238,39.4102 Z\&quot;&gt;&lt;/path&gt;&lt;/symbol&gt;&quot;</span>
-  }
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  ...<span class="token punctuation">,</span>
+  <span class="token property">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Batman &lt;span&gt;Design System&lt;/span&gt;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;primary&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FFAC2F&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;secondary&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#AD6D2F&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;bodyBackground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#ECECEC&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;bodyForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#222222&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;headingForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#000&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;itemBackground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FFF&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;itemBorder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FFAC2F&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;toolbarIconsForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#000&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sidebarBackground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#222222&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sidebarForeground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#D8D8D8&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;brand&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&lt;symbol id=\&quot;icon-toolbox\&quot; viewBox=\&quot;0 0 88 47\&quot; version=\&quot;1.1\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot;&gt;&lt;path fill=\&quot;currentColor\&quot; d=\&quot;M32.954238,39.4102 C37.860438,39.63676 42.040138,42.6993 43.876238,47 C45.712138,42.7031 49.891838,39.6367 54.798238,39.4102 C56.587338,35.1875 60.755238,32.3946 65.376238,32.3946 C66.770738,32.3946 68.130138,32.6446 69.430938,33.14069 C71.473938,29.62119 75.278638,27.39459 79.376238,27.39459 C82.579338,27.39459 85.602838,28.75399 87.743438,31.02739 C86.848908,19.32439 81.380138,8.55039 72.395438,0.89839 C67.739238,8.05069 60.418438,13.29339 52.137438,15.36339 C52.110098,15.3712 52.078848,15.37902 52.055408,15.38292 C51.758528,15.44152 51.446028,15.36339 51.211658,15.16808 C50.981188,14.97277 50.848378,14.6798 50.856188,14.37511 L50.863998,14.17589 C50.867908,14.10167 50.871808,14.02745 50.871808,13.95323 C50.871808,13.92979 50.871808,13.85558 50.875718,13.83604 C50.852278,11.71884 50.395248,9.71104 49.578818,8.03524 L48.688198,8.98836 C48.387418,9.30867 47.918668,9.39852 47.524098,9.20711 C45.309298,8.13681 42.442098,8.13681 40.227198,9.20711 C39.832668,9.39852 39.360008,9.30867 39.063098,8.98836 L38.172478,8.03524 C37.356068,9.70714 36.902978,11.71104 36.883378,13.80864 C36.883378,13.83208 36.879468,13.90239 36.875568,13.92583 C36.875568,14.02739 36.879468,14.10161 36.883378,14.17192 L36.891188,14.37114 C36.899008,14.68364 36.762278,14.98052 36.516188,15.17583 C36.273998,15.37114 35.953688,15.44145 35.648998,15.36724 C27.352098,13.30474 20.015998,8.05864 15.351998,0.89024 C6.359798,8.56214 0.887,19.34724 0,31.03124 C2.1445,28.75394 5.167998,27.39454 8.371098,27.39454 C12.468798,27.39454 16.273398,29.62114 18.316398,33.14064 C19.617198,32.64455 20.976598,32.39455 22.371098,32.39455 C26.996098,32.39455 31.160198,35.18755 32.953098,39.41015 L32.954238,39.4102 Z\&quot;&gt;&lt;/path&gt;&lt;/symbol&gt;&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h2 id="custom-indexhtml">Custom index.html</h2>
-<p>If the default template did not suit to your project and you want to edit the <code>&lt;head&gt;</code> of your styleguide, you can simply add a <code>toolbox-index.html</code> in the root directory. Then you edit the following default template.</p>
+<p>If the default template did not suit to your project and you want to edit the <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span></code> of your styleguide, you can simply add a <code>toolbox-index.html</code> in the root directory. Then you edit the following default template.</p>
 <p>./toolbox-index.html</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Styleguide<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.polyfill.io/v2/polyfill.js?features=String.prototype.includes,Array.prototype.find&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;styleguide&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://code.jquery.com/jquery-3.1.1.slim.min.js&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n&quot;</span>
-    <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+<pre class="language-"><code class="lang-html"><span class="token doctype">&lt;!doctype html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Styleguide<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://cdn.polyfill.io/v2/polyfill.js?features<span class="token punctuation">=</span>String.prototype.includes,Array.prototype.find<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>styleguide<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://code.jquery.com/jquery-3.1.1.slim.min.js<span class="token punctuation">&quot;</span></span> <span class="token attr-name">integrity</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">crossorigin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>anonymous<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h2 id="custom-homepage">Custom homepage</h2>
 <p>By default, the <code>./docs/index.{html, md}</code> will be rendered in the styleguide&apos;s homepage with all the styleguide shell around. If you want a <strong>full-sized homepage to create some custom fancy welcome page</strong>, you can create a custom <code>index.html</code> as describe above and add :</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- [...] --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">window</span>.fullhome = <span class="hljs-literal">true</span>;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment" spellcheck="true">&lt;!-- [...] --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>window.fullhome = true;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="next-step">Next step</h3>
 <p>You want to know a bit more about the people and the philosophy behind Toolbox, check <a href="about.html">this last page</a>.</p>
@@ -523,7 +523,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Customize","level":"1.12","depth":1,"next":{"title":"Behind Toolbox","level":"1.13","depth":1,"path":"about.md","ref":"about.md","articles":[]},"previous":{"title":"Documentation","level":"1.11","depth":1,"path":"documentation.md","ref":"documentation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"customize.md","mtime":"2018-03-05T10:03:55.215Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T10:59:22.272Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Customize","level":"1.12","depth":1,"next":{"title":"Behind Toolbox","level":"1.13","depth":1,"path":"about.md","ref":"about.md","articles":[]},"previous":{"title":"Documentation","level":"1.11","depth":1,"path":"documentation.md","ref":"documentation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search","prism","-highlight"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night"},"prism":{"css":["../prism-theme-one-dark/prism-onedark.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Antistatique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Toolbox - Complete Frontend Atomic Workflow","gitbook":"*"},"file":{"path":"customize.md","mtime":"2018-03-05T10:03:55.215Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T11:06:25.741Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

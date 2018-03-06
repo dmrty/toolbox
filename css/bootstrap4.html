@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Bootstrap & co. · GitBook</title>
+  <title>Bootstrap & co. · Toolbox - Complete Frontend Atomic Workflow</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="">
   <meta name="generator" content="GitBook 3.2.2">
-  
+  <meta name="author" content="Antistatique">
   
   
     
@@ -17,11 +17,11 @@
     
     
       
-      <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+      <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
       
     
       
-      <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+      <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-onedark.css">
       
     
       
@@ -443,34 +443,34 @@
 <li><code>assets/config/bootstrap-variables.scss</code></li>
 </ul>
 <p>To <strong>create the <code>bootstrap-variables.scss</code></strong>, type the following command to get the related file of your installed Bootstrap version :</p>
-<pre><code class="lang-bash">$ cp node_modules/bootstrap/scss/_variables.scss assets/config/bootstrap-variables.scss
+<pre class="language-"><code class="lang-bash">$ <span class="token function">cp</span> node_modules/bootstrap/scss/_variables.scss assets/config/bootstrap-variables.scss
 </code></pre>
 <p><strong>bootstrap.scss</strong> will import all the Bootstrap parts that you need. Remember, import only what you need to keep your CSS bundle as light as possible. This <strong>bootstrap.scss</strong> will be imported at the top of our Sass entry file.</p>
 <p>./assets/components/base.scss</p>
-<pre><code class="lang-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;../config/variables&apos;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;../config/bootstrap&apos;</span>;
-<span class="hljs-comment">// [..]</span>
+<pre class="language-"><code class="lang-scss"><span class="token keyword">@import</span> <span class="token string">&apos;../config/variables&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&apos;../config/bootstrap&apos;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// [..]</span>
 </code></pre>
 <p>./assets/config/bootstrap.scss</p>
-<pre><code class="lang-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/functions&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;./bootstrap-variables&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/variables&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/mixins&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/root&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/reboot&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/type&quot;</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/images&quot;</span>;
-<span class="hljs-comment">// @import &quot;../../node_modules/bootstrap/scss/code&quot;;</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;../../node_modules/bootstrap/scss/grid&quot;</span>;
-<span class="hljs-comment">// @import &quot;../../node_modules/bootstrap/scss/tables&quot;;</span>
-<span class="hljs-comment">// @import &quot;../../node_modules/bootstrap/scss/forms&quot;;</span>
-<span class="hljs-comment">// [...]</span>
+<pre class="language-"><code class="lang-scss"><span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/functions&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;./bootstrap-variables&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/variables&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/mixins&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/root&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/reboot&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/type&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/images&quot;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// @import &quot;../../node_modules/bootstrap/scss/code&quot;;</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;../../node_modules/bootstrap/scss/grid&quot;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// @import &quot;../../node_modules/bootstrap/scss/tables&quot;;</span>
+<span class="token comment" spellcheck="true">// @import &quot;../../node_modules/bootstrap/scss/forms&quot;;</span>
+<span class="token comment" spellcheck="true">// [...]</span>
 </code></pre>
 <p>As you can see, the local <code>bootstrap-variables</code> is imported before the Bootstrap&apos;s own variables file. This way <strong>you can override the framework&apos;s variables using your own</strong>. With a framework like Bootstrap 4, changing the variables will apply 70% of your design to your interface, so be aware of all the controls you have using only framework&apos;s variables.</p>
 <p>./assets/config/bootstrap-variables.scss</p>
-<pre><code class="lang-scss"><span class="hljs-comment">// [...]</span>
-<span class="hljs-variable">$cyan</span>:     <span class="hljs-variable">$picton-blue</span> !default;
-<span class="hljs-comment">// [...]</span>
+<pre class="language-"><code class="lang-scss"><span class="token comment" spellcheck="true">// [...]</span>
+<span class="token property"><span class="token variable">$cyan</span></span><span class="token punctuation">:</span>     <span class="token variable">$picton-blue</span> <span class="token statement keyword">!default</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// [...]</span>
 </code></pre>
 <p>From now, you can easily use all the framework&apos;s variables, mixins and all the goodness to style your project !</p>
 <h3 id="next-step">Next step</h3>
@@ -518,7 +518,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Bootstrap & co.","level":"1.9.1","depth":2,"next":{"title":"JavaScript","level":"1.10","depth":1,"path":"javascript.md","ref":"javascript.md","articles":[]},"previous":{"title":"CSS","level":"1.9","depth":1,"path":"css/css.md","ref":"css/css.md","articles":[{"title":"Bootstrap & co.","level":"1.9.1","depth":2,"path":"css/bootstrap4.md","ref":"css/bootstrap4.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"css/bootstrap4.md","mtime":"2018-03-05T10:03:55.214Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T10:59:22.272Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bootstrap & co.","level":"1.9.1","depth":2,"next":{"title":"JavaScript","level":"1.10","depth":1,"path":"javascript.md","ref":"javascript.md","articles":[]},"previous":{"title":"CSS","level":"1.9","depth":1,"path":"css/css.md","ref":"css/css.md","articles":[{"title":"Bootstrap & co.","level":"1.9.1","depth":2,"path":"css/bootstrap4.md","ref":"css/bootstrap4.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["search","prism","-highlight"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night"},"prism":{"css":["../prism-theme-one-dark/prism-onedark.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Antistatique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Toolbox - Complete Frontend Atomic Workflow","gitbook":"*"},"file":{"path":"css/bootstrap4.md","mtime":"2018-03-05T10:03:55.214Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T11:06:25.741Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

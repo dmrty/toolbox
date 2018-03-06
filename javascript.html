@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>JavaScript · GitBook</title>
+  <title>JavaScript · Toolbox - Complete Frontend Atomic Workflow</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="">
   <meta name="generator" content="GitBook 3.2.2">
-  
+  <meta name="author" content="Antistatique">
   
   
     
@@ -17,11 +17,11 @@
     
     
       
-      <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+      <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
       
     
       
-      <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+      <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-onedark.css">
       
     
       
@@ -440,22 +440,22 @@
 <h2 id="components-script">Component&apos;s script</h2>
 <p>Because a JavaScript piece of code is often related to a specific component, simply <strong>put it in the component&apos;s directory</strong>. Then, import it in the JavaScript entry point <code>base.js</code> and &#x201C;voil&#xE0; !&#x201D;.</p>
 <p>./assets/components/atoms/toggle/toggle.js</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">/* globals $ */</span>
+<pre class="language-"><code class="lang-javascript"><span class="token comment" spellcheck="true">/* globals $ */</span>
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; {
-  $(<span class="hljs-string">&apos;.toggle&apos;</span>).on(<span class="hljs-string">&apos;click&apos;</span>, () =&gt; {
-    $(<span class="hljs-string">&apos;.nav&apos;</span>).toggleClass(<span class="hljs-string">&apos;open&apos;</span>);
-  });
-};
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;.toggle&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&apos;click&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;.nav&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toggleClass</span><span class="token punctuation">(</span><span class="token string">&apos;open&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <p>./assets/components/base.js</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">/* globals jQuery */</span>
+<pre class="language-"><code class="lang-javascript"><span class="token comment" spellcheck="true">/* globals jQuery */</span>
 
-<span class="hljs-keyword">import</span> toggle <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/atoms/toggle/toggle.js&apos;</span>;
+<span class="token keyword">import</span> toggle <span class="token keyword">from</span> <span class="token string">&apos;./components/atoms/toggle/toggle.js&apos;</span><span class="token punctuation">;</span>
 
-$(<span class="hljs-built_in">document</span>).ready(() =&gt; {
-  toggle();
-});
+<span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token function">toggle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="linting">Linting</h2>
 <p>As for our styles, to keep things consistent, we are using <a href="https://eslint.org/" target="_blank">Eslint</a> with the standard <a href="https://github.com/airbnb/javascript" target="_blank">Airbnb rules set</a>. You can also change it directly inside the package.json. <strong>Be also sure that your editor is properly set</strong> to display the warnings.</p>
@@ -504,7 +504,7 @@ $(<span class="hljs-built_in">document</span>).ready(() =&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JavaScript","level":"1.10","depth":1,"next":{"title":"Documentation","level":"1.11","depth":1,"path":"documentation.md","ref":"documentation.md","articles":[]},"previous":{"title":"Bootstrap & co.","level":"1.9.1","depth":2,"path":"css/bootstrap4.md","ref":"css/bootstrap4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javascript.md","mtime":"2018-03-05T10:03:55.218Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T10:59:22.272Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JavaScript","level":"1.10","depth":1,"next":{"title":"Documentation","level":"1.11","depth":1,"path":"documentation.md","ref":"documentation.md","articles":[]},"previous":{"title":"Bootstrap & co.","level":"1.9.1","depth":2,"path":"css/bootstrap4.md","ref":"css/bootstrap4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search","prism","-highlight"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night"},"prism":{"css":["../prism-theme-one-dark/prism-onedark.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Antistatique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Toolbox - Complete Frontend Atomic Workflow","gitbook":"*"},"file":{"path":"javascript.md","mtime":"2018-03-05T10:03:55.218Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T11:06:25.741Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
