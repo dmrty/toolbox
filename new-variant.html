@@ -447,14 +447,18 @@
 <p>In the <strong>YAML file</strong>, you can specify as many options as for the main component:</p>
 <pre class="language-"><code class="lang-yaml">  <span class="token key atrule">title</span><span class="token punctuation">:</span> My Component
   <span class="token key atrule">name</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>component
+  <span class="token key atrule">notes</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+    some notes                          &#x2190; documentation for the component (markdown)</span>
   <span class="token key atrule">wrapper</span><span class="token punctuation">:</span> <span class="token string">&quot;.container .bg-dark&quot;</span>
   <span class="token key atrule">background</span><span class="token punctuation">:</span> &quot;<span class="token comment" spellcheck="true">#f00&quot; </span>
-  <span class="token key atrule">variants</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
-    - title: My secondary Component     &#x2190; Variant title
-      name: secondary                   &#x2190; Variant slug (without component slug)
-      wrapper: &quot;.bg-light&quot;              &#x2190; Wrapper Class(es)
-      background: &quot;#00f&quot;                &#x2190; Background color of the preview box
-    - ...</span>
+  <span class="token key atrule">variants</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> My secondary Component     &#x2190; Variant title
+      <span class="token key atrule">name</span><span class="token punctuation">:</span> secondary                   &#x2190; Variant slug (without component slug)
+      <span class="token key atrule">notes</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+        some notes                      &#x2190; documentation for the variant (markdown)</span>
+      <span class="token key atrule">wrapper</span><span class="token punctuation">:</span> &quot;.bg<span class="token punctuation">-</span>light&quot;              &#x2190; Wrapper Class(es)
+      <span class="token key atrule">background</span><span class="token punctuation">:</span> &quot;<span class="token comment" spellcheck="true">#00f&quot;                &#x2190; Background color of the preview box</span>
+    <span class="token punctuation">-</span> <span class="token punctuation">...</span>
 </code></pre>
 <h3 id="next-steps">Next steps</h3>
 <p>Now, you can learn how to use the <a href="cli.html">local toolbox CLI</a></p>
@@ -501,7 +505,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"New variant","level":"1.6","depth":1,"next":{"title":"CLI","level":"1.7","depth":1,"path":"cli.md","ref":"cli.md","articles":[]},"previous":{"title":"New component","level":"1.5","depth":1,"path":"new-component.md","ref":"new-component.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search","prism","-highlight"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night"},"prism":{"css":["../prism-theme-one-dark/prism-onedark.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Antistatique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Toolbox - Complete Frontend Atomic Workflow","gitbook":"*"},"file":{"path":"new-variant.md","mtime":"2018-03-05T10:03:55.220Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T11:06:25.741Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"New variant","level":"1.6","depth":1,"next":{"title":"CLI","level":"1.7","depth":1,"path":"cli.md","ref":"cli.md","articles":[]},"previous":{"title":"New component","level":"1.5","depth":1,"path":"new-component.md","ref":"new-component.md","articles":[]},"dir":"ltr"},"config":{"plugins":["search","prism","-highlight"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night"},"prism":{"css":["../prism-theme-one-dark/prism-onedark.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Antistatique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Toolbox - Complete Frontend Atomic Workflow","gitbook":"*"},"file":{"path":"new-variant.md","mtime":"2018-03-06T16:16:45.922Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-03-06T16:16:59.161Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
